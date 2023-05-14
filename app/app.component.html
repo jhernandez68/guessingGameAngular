@@ -1,0 +1,11 @@
+<h1>Aplicación para adivinar un número</h1>
+
+<p>Digita un numero entre 1 y 100!</p>
+
+<input type="text" [(ngModel)]="numeroDelUsuario"/>
+
+<button (click) = "adivinarNumero(textoGanador)"> Adivinar!</button>
+
+<button (click) = "generarNumero(textoGanador)">Generar nuevo numero</button>
+
+<p class="oculto" #textoGanador> Felicidades, adivinaste el numero: {{randomNumber}}</p>
